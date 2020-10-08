@@ -4,9 +4,31 @@
 /* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
+html, body {
+    overflow-x: hidden;
+  }
 
 h1 {
     font-family: 'Cookie', cursive;
     font-size: 71px;
-    color: purple;
+    color: #ccffcc;
 }
+
+.row-full {
+    margin: 0 -601.5rem; 
+    padding: 0.25rem 1.5rem;
+    background: #ccffcc;
+    border-left: 600rem solid white;
+    border-right: 600rem solid white;
+}
+
+body {
+    background-image: url("assets/04-BG.png");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+
+  
