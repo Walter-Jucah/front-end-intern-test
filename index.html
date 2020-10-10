@@ -6,30 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
     <title>GreenCity</title>
-    
 </head>
 <body>
-    <div class="container" style="width: 750px; margin: 0 auto;">
-
-        <div class="row-full">
+    <div class="container">
+        <div class="column-title title">
             <img src="assets/06-LOGO.png">
         </div>
-        
+        <div class="column subtitle">
+            Vem tomar um café<br> com a gente
+        </div>
+        <div class="column">
+            <!-- Recomendamos que você não altere os IDs dos elementos do formulário -->
+            <form id="contact" action="#">
+                <div class="column text-center mb-10">
+                    <input type="text" id="name" placeholder="  Nome">
+                </div>
+                <div class="column text-center mb-10">
+                    <input type="text" id="email" placeholder="  Email">
+                </div>
+                <div class="column text-center mb-10">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="  Mensagem"></textarea>
+                </div>
+                <div class="column text-center mb-10">
+                    <input id="btn-enviar" type="submit" value="ENVIAR">
+                </div>
+            </form>
+        </div>
     </div>
-    
-    
-
-    <h1>Vem tomar um café<br>com a gente</h1>
-    
-
-    <!-- Recomendamos que você não altere os IDs dos elementos do formulário -->
-    <form id="contact" action="#">
-        <input type="text" id="name" placeholder="Nome"><br>
-        <input type="text" id="email" placeholder="Endereço de email"><br>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea><br>
-        <input type="submit" value="Enviar">
-    </form>
-
     <script src="main.js"></script>
 </body>
 </html>
