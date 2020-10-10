@@ -15,10 +15,30 @@
   contactForm.addEventListener('submit', function() {
     // A propriedade "value" contém o valor atual de um input ou textarea
     const nameValue = nameInput.value;
+    const emailValue = emailInput.value;
+    const messageValue = messageInput.value;
 
     // A propriedade "length" contém o tamanho (em caracteres) de uma
     // uma string. Toda string contém essa propriedade.
     const nameLength = nameValue.length;
+
+    if (nameValue == '') {
+      window.alert('O campo Nome é obrigatório.');
+      document.getElementById('name').focus();
+      return false;
+    }
+
+    if (emailValue == '') {
+      window.alert('O campo E-mail é obrigatório.');
+      document.getElementById('email').focus();
+      return false;
+    }
+
+    if (messageValue == '') {
+      window.alert('O campo Mensagem é obrigatório.');
+      document.getElementById('message').focus();
+      return false;
+    }
 
     // "window" é um objeto global que representa a janela (ou aba) do
     // navegador que está executando o código do seu site. O método
