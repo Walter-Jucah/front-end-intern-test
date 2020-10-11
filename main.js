@@ -44,7 +44,7 @@
     // navegador que está executando o código do seu site. O método
     // "alert" simplesmente mostra um aviso para o usuário contendo a
     // mensagem provida.
-    window.alert(`Botão enviar clicado! Conteúdo do campo nome: ${nameValue} (${nameLength} caracteres)`);
+    window.alert(`Formulário enviado com sucesso!`);
 
     // Altere e complete essa função para validar os campos do formulário
     // de acordo com as especificações do teste. Boa sorte!
